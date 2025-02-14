@@ -19,7 +19,7 @@
 #  ExecStop=/opt/kafka/kafka/bin/kafka-server-stop.sh
 
 # --- Set the MySQL root password ---
-export MYSQL_ROOT_PASSWORD="Jagan@1204"
+export MYSQL_ROOT_PASSWORD="Your-Password"
 
 # --- Check for root privileges ---
 if [[ $EUID -ne 0 ]]; then
