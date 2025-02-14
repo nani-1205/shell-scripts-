@@ -3,7 +3,7 @@
 # Script to restore a MongoDB database using mongorestore
 
 # Define variables
-HOST="18.61.75.247:27017"
+HOST="0.0.0.0:27017"
 DATABASE="Jagan"
 USERNAME="ADMIN"
 PASSWORD="ADMIN@1234"
