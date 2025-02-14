@@ -2,8 +2,8 @@
 
 # Variables (modify these!)
 HOST="18.61.75.247:27017"
-USERNAME="Jagan"
-PASSWORD="Jagan@1234"
+USERNAME="ADMIN"
+PASSWORD="ADMIN@1234"
 AUTHENTICATION_DATABASE="admin"
 
 # Attempt to connect using the mongo shell
