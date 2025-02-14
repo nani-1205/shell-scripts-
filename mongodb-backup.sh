@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Variables (modify these!)
-HOST="18.61.75.247:27017"
+HOST="0.0.0.0:27017"
 USERNAME="ADMIN"
 PASSWORD="ADMIN@1234"
 AUTHENTICATION_DATABASE="admin"
