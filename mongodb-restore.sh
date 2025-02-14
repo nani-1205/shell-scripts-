@@ -5,8 +5,8 @@
 # Define variables
 HOST="18.61.75.247:27017"
 DATABASE="Jagan"
-USERNAME="Jagan"
-PASSWORD="Jagan@1234"
+USERNAME="ADMIN"
+PASSWORD="ADMIN@1234"
 AUTHENTICATION_DATABASE="admin"
 BACKUP_DIR="/root/backup/Jagan"  # The directory containing the backup data
 
