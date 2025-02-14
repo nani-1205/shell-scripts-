@@ -18,7 +18,7 @@ BACKUP_DIR="/root/backup/ABC"  # The directory containing the backup data
 MONGORESTORE_COMMAND="mongorestore --host=$HOST --gzip --db $DATABASE --username $USERNAME --password '$PASSWORD' --authenticationDatabase $AUTHENTICATION_DATABASE $BACKUP_DIR"
 
 # Alternatively, if your backup is a single compressed file, use:
-# MONGORESTORE_COMMAND="mongorestore --host=$HOST --gzip --db $DATABASE --username $USERNAME --password '$PASSWORD' --authenticationDatabase $AUTHENTICATION_DATABASE --archive=$BACKUP_DIR.gz" # Assuming the backup file is named 'Jagan.gz'
+# MONGORESTORE_COMMAND="mongorestore --host=$HOST --gzip --db $DATABASE --username $USERNAME --password '$PASSWORD' --authenticationDatabase $AUTHENTICATION_DATABASE --archive=$BACKUP_DIR.gz" # Assuming the backup file is named 'ABC.gz'
 
 # Echo the command for debugging (optional)
 echo "Running command: $MONGORESTORE_COMMAND"
