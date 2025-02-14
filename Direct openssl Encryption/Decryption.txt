@@ -1,0 +1,54 @@
+Direct openssl Encryption/Decryption Test:
+
+Create a test file:
+
+echo "This is my secret message" > test_message.txt
+Use code with caution.
+Bash
+Encrypt the file using openssl directly:
+
+openssl enc -aes-256-cbc -pbkdf2 -iter 10000 -salt -pass pass:"MySuperSecretPassword" -in test_message.txt -out encrypted_message.enc
+Use code with caution.
+Bash
+Replace "MySuperSecretPassword" with your actual password.
+
+The -pbkdf2 -iter 10000 options specify a stronger key derivation method.
+
+The -salt option adds a random salt.
+
+-in test_message.txt specifies the input file.
+
+-out encrypted_message.enc specifies the output file.
+
+There should be no password prompt when encrypting
+
+Check if the file encrypted_message.enc was created
+
+ls -l encrypted_message.enc
+Use code with caution.
+Bash
+Decrypt the file using openssl directly:
+
+openssl enc -aes-256-cbc -pbkdf2 -iter 10000 -salt -pass pass:"MySuperSecretPassword" -d -in encrypted_message.enc -out decrypted_message.txt
+Use code with caution.
+Bash
+Replace "MySuperSecretPassword" with the exact same password you used for encryption.
+
+The -d option specifies decryption.
+
+View the decrypted file:
+
+cat decrypted_message.txt
+Use code with caution.
+Bash
+You should see "This is my secret message" printed to the terminal.
+
+Interpreting the Results:
+
+If encryption or decryption fails with openssl errors: This indicates that the openssl command is not working correctly on your system. Possible causes include:
+
+openssl not installed: Make sure the openssl package is installed (e.g., sudo apt install openssl or sudo dnf install openssl).
+
+Incorrect openssl version: Some older versions of openssl may not support certain options.
+
+File permissions: Make sure you have read and write permissions to the files.
