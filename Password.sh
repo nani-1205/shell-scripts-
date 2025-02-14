@@ -3,7 +3,7 @@
 # Get user password and display a secret message if correct
 
 # Store the correct password (replace with a strong, secure password)
-CORRECT_PASSWORD="Jagan"
+CORRECT_PASSWORD="password"
 
 read -s -p "Enter Your Password: " password
 echo  # Add a newline after the prompt
