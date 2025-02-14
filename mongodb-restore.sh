@@ -8,7 +8,7 @@ DATABASE="Jagan"
 USERNAME="ADMIN"
 PASSWORD="ADMIN@1234"
 AUTHENTICATION_DATABASE="admin"
-BACKUP_DIR="/root/backup/Jagan"  # The directory containing the backup data
+BACKUP_DIR="/root/backup/ABC"  # The directory containing the backup data
 
 # Construct the mongorestore command
 # Note: If the backup directory contains subdirectories for each collection
