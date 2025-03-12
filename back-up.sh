@@ -3,7 +3,7 @@
 # --- Configuration ---
 USER_E02="ec2-user"
 HOST_E02="18.60.184.24"
-PASSWORD_E02="Saijagan@12"  # SSH Keys!
+PASSWORD_E02="Password"  # SSH Keys!
 SOURCE_E02="/opt/Jagan*"
 DESTINATION_E01="/opt/back-up"
 NUM_BACKUPS_TO_KEEP=3
